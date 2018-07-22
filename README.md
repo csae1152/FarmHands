@@ -1,2 +1,2 @@
 # FarmHands
-Spring Boot application with HTML5 frontend.
+JHipster Spring Boot application with HTML5 frontend.
