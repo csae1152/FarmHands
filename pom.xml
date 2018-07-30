@@ -119,6 +119,12 @@
       <artifactId>lombok</artifactId>  
       <optional>true</optional> 
     </dependency>  
+    <!-- https://mvnrepository.com/artifact/org.functionaljava/functionaljava -->  
+    <dependency> 
+      <groupId>org.functionaljava</groupId>  
+      <artifactId>functionaljava</artifactId>  
+      <version>3.0</version> 
+    </dependency>  
     <dependency> 
       <groupId>org.springframework.boot</groupId>  
       <artifactId>spring-boot-starter-tomcat</artifactId>  
@@ -187,27 +193,27 @@
           </execution> 
         </executions> 
       </plugin>  
-      <plugin>
-        <groupId>org.jetbrains.kotlin</groupId>
-        <artifactId>kotlin-maven-plugin</artifactId>
-        <version>1.0.4</version>
-        <executions>
-          <execution>
-            <id>compile</id>
-            <phase>process-sources</phase>
-            <goals>
-              <goal>compile</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>test-compile</id>
-            <phase>process-test-sources</phase>
-            <goals>
-              <goal>test-compile</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
+      <plugin> 
+        <groupId>org.jetbrains.kotlin</groupId>  
+        <artifactId>kotlin-maven-plugin</artifactId>  
+        <version>1.0.4</version>  
+        <executions> 
+          <execution> 
+            <id>compile</id>  
+            <phase>process-sources</phase>  
+            <goals> 
+              <goal>compile</goal> 
+            </goals> 
+          </execution>  
+          <execution> 
+            <id>test-compile</id>  
+            <phase>process-test-sources</phase>  
+            <goals> 
+              <goal>test-compile</goal> 
+            </goals> 
+          </execution> 
+        </executions> 
+      </plugin> 
     </plugins> 
   </build> 
 </project>
